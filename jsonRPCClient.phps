@@ -107,7 +107,7 @@ class jsonRPCClient {
           * @return String returns string with '<br/>' or '<br>' inserted before al newlines.
           */
          if($this->debug) {
-            echo nl2br($this->debug);
+            error_log($this->debug);
          }
 
          /* Final checks and return */
